@@ -436,7 +436,7 @@
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/login.do-252" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_01_login.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_ck" elementType="HTTPArgument">
@@ -601,7 +601,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/login_redirect.do-253" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_02_login_redirect.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_stack" elementType="HTTPArgument">
@@ -609,6 +609,7 @@
                     <stringProp name="Argument.name">sysparm_stack</stringProp>
                     <stringProp name="Argument.value">no</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -694,7 +695,7 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/date_time/legacy-254" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_03_api/now/ui/date_time/legacy" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -763,7 +764,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/nav_to.do-255" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_04_nav_to.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="uri" elementType="HTTPArgument">
@@ -771,6 +772,7 @@
                     <stringProp name="Argument.name">uri</stringProp>
                     <stringProp name="Argument.value">home_splash.do?sysparm_direct=true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -840,7 +842,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/navpage.do-256" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_05_navpage.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -974,7 +976,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/home_splash.do-258" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_06_home_splash.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_direct" elementType="HTTPArgument">
@@ -982,6 +984,7 @@
                     <stringProp name="Argument.name">sysparm_direct</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1050,7 +1053,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-259" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_07_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1058,12 +1061,14 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">get_partial</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">name</stringProp>
                     <stringProp name="Argument.value">sn_user_avatar.xml</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1136,7 +1141,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do?sysparm_type=message-260" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_08_angular.do?sysparm_type=message" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -1224,7 +1229,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/impersonate/role-261" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login09_api/now/ui/impersonate/role" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -1297,7 +1302,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-263" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_10_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1305,12 +1310,14 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">get_partial</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">name</stringProp>
                     <stringProp name="Argument.value">sn_hr_sidebar_pane.xml</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1383,7 +1390,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/navigator/favorites-262" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_11_api/now/ui/navigator/favorites" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -1456,7 +1463,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-265" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_12_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1464,18 +1471,21 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">user_preference</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_pref_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_pref_name</stringProp>
                     <stringProp name="Argument.value">glide.ui.keyboard.shortcuts.enabled</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_action" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_action</stringProp>
                     <stringProp name="Argument.value">get</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1548,7 +1558,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-264" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_13_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1556,18 +1566,21 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">user_preference</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_pref_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_pref_name</stringProp>
                     <stringProp name="Argument.value">hr_sidebar_pane.opened</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_action" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_action</stringProp>
                     <stringProp name="Argument.value">get</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1640,7 +1653,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/amb/handshake-266" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_14_amb/handshake" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -1720,7 +1733,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/embeddedhelp/home_splash/normal-267" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_15_api/now/embeddedhelp/home_splash/normal" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="uri" elementType="HTTPArgument">
@@ -1728,6 +1741,7 @@
                     <stringProp name="Argument.name">uri</stringProp>
                     <stringProp name="Argument.value">%2Fhome_splash.do%3Fsysparm_direct%3Dtrue</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1800,7 +1814,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-268" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_16_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1808,12 +1822,14 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">get_partial</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">name</stringProp>
                     <stringProp name="Argument.value">sn_hr_sidebar_content.xml</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -1886,7 +1902,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/amb/connect-270" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_17_amb/connect" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -1966,7 +1982,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-269" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_18_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -1974,24 +1990,28 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">user_preference</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_pref_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_pref_name</stringProp>
                     <stringProp name="Argument.value">hr_sidebar_pane.opened</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_action" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_action</stringProp>
                     <stringProp name="Argument.value">set</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_pref_value" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_pref_value</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -2064,7 +2084,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/amb/-273" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_19_amb/" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -2144,7 +2164,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/guided_tours/tours-272" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_20_api/now/guided_tours/tours" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="page_id" elementType="HTTPArgument">
@@ -2152,12 +2172,14 @@
                     <stringProp name="Argument.name">page_id</stringProp>
                     <stringProp name="Argument.value">home_splash</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="context" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">context</stringProp>
                     <stringProp name="Argument.value">%2Fnav_to.do%3Furi%3D%252Fhome_splash.do%253Fsysparm_direct%253Dtrue</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -2230,7 +2252,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/home.do-271" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_21_home.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -2299,7 +2321,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/date_time/legacy-276" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_22_api/now/ui/date_time/legacy" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -2368,7 +2390,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/angular.do-277" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_23_angular.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_type" elementType="HTTPArgument">
@@ -2376,18 +2398,21 @@
                     <stringProp name="Argument.name">sysparm_type</stringProp>
                     <stringProp name="Argument.value">home_layout_processor</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="type" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">type</stringProp>
                     <stringProp name="Argument.value">getlayouts</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="pageid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">pageid</stringProp>
                     <stringProp name="Argument.value">ee9006180fb6d2803f2c09bce1050e6a</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -2456,7 +2481,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/xmlhttp.do-279" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_24_xmlhttp.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_processor" elementType="HTTPArgument">
@@ -2464,78 +2489,91 @@
                     <stringProp name="Argument.name">sysparm_processor</stringProp>
                     <stringProp name="Argument.value">AJAXXMLHttpAggregator</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_scope</stringProp>
                     <stringProp name="Argument.value">global</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_processor" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_processor</stringProp>
                     <stringProp name="Argument.value">x_pgo_happynow_mea.HappyScoreService</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_scope</stringProp>
                     <stringProp name="Argument.value">current_year</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_name</stringProp>
                     <stringProp name="Argument.value">getAgentScore</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.ni.nolog.x_referer</stringProp>
                     <stringProp name="Argument.value">ignore</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.x_referer</stringProp>
                     <stringProp name="Argument.value">home.do</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="1.sysparm_processor" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">1.sysparm_processor</stringProp>
                     <stringProp name="Argument.value">x_pgo_happynow_mea.HappyScoreService</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="1.sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">1.sysparm_scope</stringProp>
                     <stringProp name="Argument.value">current_month</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="1.sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">1.sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="1.sysparm_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">1.sysparm_name</stringProp>
                     <stringProp name="Argument.value">getAgentScore</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="1.ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2678,7 +2716,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/page_timing/93403cbf1bc97850831e10a38b4bcbe7-280" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_25_api/now/ui/page_timing/93403cbf1bc97850831e10a38b4bcbe7" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -2766,7 +2804,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/embeddedhelp/home/normal-281" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_26_api/now/embeddedhelp/home/normal" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="uri" elementType="HTTPArgument">
@@ -2774,6 +2812,7 @@
                     <stringProp name="Argument.name">uri</stringProp>
                     <stringProp name="Argument.value">%2Fhome.do%3F</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -2846,7 +2885,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/ui/concoursepicker/domain-278" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_27_api/now/ui/concoursepicker/domain" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="cache" elementType="HTTPArgument">
@@ -2854,6 +2893,7 @@
                     <stringProp name="Argument.name">cache</stringProp>
                     <stringProp name="Argument.value">1625571784503</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -2926,7 +2966,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/xmlhttp.do-282" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_28_xmlhttp.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_processor" elementType="HTTPArgument">
@@ -2934,78 +2974,91 @@
                     <stringProp name="Argument.name">sysparm_processor</stringProp>
                     <stringProp name="Argument.value">AJAXXMLHttpAggregator</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_scope</stringProp>
                     <stringProp name="Argument.value">global</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_processor" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_processor</stringProp>
                     <stringProp name="Argument.value">x_pgo_happynow_mea.HappyFeedbackService</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_scope</stringProp>
                     <stringProp name="Argument.value">x_pgo_happynow_mea</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_name</stringProp>
                     <stringProp name="Argument.value">getFeedback</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.fromWindow" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.fromWindow</stringProp>
                     <stringProp name="Argument.value"></stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.toWindow" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.toWindow</stringProp>
                     <stringProp name="Argument.value">20</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.scope</stringProp>
                     <stringProp name="Argument.value">my</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.ni.nolog.x_referer</stringProp>
                     <stringProp name="Argument.value">ignore</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.x_referer</stringProp>
                     <stringProp name="Argument.value">home.do</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_aggregation_size" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_aggregation_size</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3094,7 +3147,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/xmlhttp.do-283" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_29_xmlhttp.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_processor" elementType="HTTPArgument">
@@ -3102,78 +3155,91 @@
                     <stringProp name="Argument.name">sysparm_processor</stringProp>
                     <stringProp name="Argument.value">AJAXXMLHttpAggregator</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_scope</stringProp>
                     <stringProp name="Argument.value">global</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_processor" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_processor</stringProp>
                     <stringProp name="Argument.value">com.glideapp.home.LayoutPreview</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_scope" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_scope</stringProp>
                     <stringProp name="Argument.value">global</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.sysparm_want_session_messages" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.sysparm_want_session_messages</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.name" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.name</stringProp>
                     <stringProp name="Argument.value">f6defafa0a0a0b12000d5016bd12ff06</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.className" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.className</stringProp>
                     <stringProp name="Argument.value">layout_changer_preview</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.showInnerText" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.showInnerText</stringProp>
                     <stringProp name="Argument.value">false</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.normalizeTables" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.normalizeTables</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.ni.nolog.x_referer</stringProp>
                     <stringProp name="Argument.value">ignore</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="0.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">0.x_referer</stringProp>
                     <stringProp name="Argument.value">home.do</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_aggregation_size" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_aggregation_size</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="ni.nolog.x_referer" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3262,7 +3328,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/api/now/guided_tours/tours-284" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login_30_api/now/guided_tours/tours" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="page_id" elementType="HTTPArgument">
@@ -3270,12 +3336,14 @@
                     <stringProp name="Argument.name">page_id</stringProp>
                     <stringProp name="Argument.value">home</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="context" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">context</stringProp>
                     <stringProp name="Argument.value">/nav_to.do?uri=%2Fhome.do%3F</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -3376,189 +3444,6 @@
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/v3/feeds/me/$batch-285" enabled="false">
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">&#xd;
---Batch_1625571806&#xd;
-Content-Type: application/http&#xd;
-Content-Transfer-Encoding: binary&#xd;
-&#xd;
-POST https://enterprise.activity.windows.com/v3/feeds/me/activities HTTP/1.1&#xd;
-Content-Length: 1572&#xd;
-Content-Type: application/json&#xd;
-&#xd;
-[&#xd;
-   {&#xd;
-      &quot;__schemaVersion&quot; : 1,&#xd;
-      &quot;activityId&quot; : &quot;90A775A5-9A65-9E7A-3101-E27E16F005DA&quot;,&#xd;
-      &quot;appActivityId&quot; : &quot;ECB32AF3-1440-4086-94E3-5311F97F89C4\\{ThisPCDesktopFolder}\\ServiceNow Perf Testing\\Details.txt&quot;,&#xd;
-      &quot;appId&quot; : {&#xd;
-         &quot;alternateId&quot; : &quot;&quot;,&#xd;
-         &quot;packageId&quot; : &quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\notepad.exe&quot;,&#xd;
-         &quot;windows_win32&quot; : &quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\notepad.exe&quot;&#xd;
-      },&#xd;
-      &quot;applicationId&quot; : [&#xd;
-         {&#xd;
-            &quot;application&quot; : &quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\notepad.exe&quot;,&#xd;
-            &quot;platform&quot; : &quot;windows_win32&quot;&#xd;
-         },&#xd;
-         {&#xd;
-            &quot;application&quot; : &quot;{D65231B0-B2F1-4857-A4CE-A8E7C6EA7D27}\\notepad.exe&quot;,&#xd;
-            &quot;platform&quot; : &quot;windows_win32&quot;&#xd;
-         },&#xd;
-         {&#xd;
-            &quot;application&quot; : &quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\\notepad.exe&quot;,&#xd;
-            &quot;platform&quot; : &quot;packageId&quot;&#xd;
-         },&#xd;
-         {&#xd;
-            &quot;application&quot; : &quot;&quot;,&#xd;
-            &quot;platform&quot; : &quot;alternateId&quot;&#xd;
-         }&#xd;
-      ],&#xd;
-      &quot;endTime&quot; : &quot;2021-07-06T11:43:24.000Z&quot;,&#xd;
-      &quot;groupIds&quot; : &quot;Copy&quot;,&#xd;
-      &quot;lastModifiedOnClient&quot; : &quot;2021-07-06T11:43:24.000Z&quot;,&#xd;
-      &quot;parentActivityId&quot; : &quot;936D35EF-6B59-83D0-55F2-8827689880DD&quot;,&#xd;
-      &quot;payload&quot; : &quot;eyJnZHByVHlwZSI6IlByb2R1Y3RBbmRTZXJ2aWNlVXNhZ2UiLCJjbGlwYm9hcmREYXRhSWQiOiJ7NjYxQzM2RUEtMUE1My00QjdBLUFERjMtM0E3N0E3MzI3Q0I0fSJ9&quot;,&#xd;
-      &quot;platformDeviceId&quot; : &quot;orzA4jKZTpeLJ/UntvN/POlutFVxmDoJhraKngjugXQ=&quot;,&#xd;
-      &quot;priority&quot; : 3,&#xd;
-      &quot;read&quot; : false,&#xd;
-      &quot;startTime&quot; : &quot;2021-07-06T11:43:24.000Z&quot;,&#xd;
-      &quot;type&quot; : 16,&#xd;
-      &quot;userActionState&quot; : 0&#xd;
-   }&#xd;
-]&#xd;
-&#xd;
---Batch_1625571806--</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">enterprise.activity.windows.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/v3/feeds/me/$batch</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-                <collectionProp name="Asserion.test_strings"/>
-                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-                <stringProp name="Assertion.custom_message"></stringProp>
-                <boolProp name="Assertion.assume_success">false</boolProp>
-                <intProp name="Assertion.test_type">2</intProp>
-              </ResponseAssertion>
-              <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Date" elementType="Header">
-                    <stringProp name="Header.name">Date</stringProp>
-                    <stringProp name="Header.value">Tue, 06 Jul 2021 11:43:26 GMT</stringProp>
-                  </elementProp>
-                  <elementProp name="X-AFS-ClientInfo" elementType="Header">
-                    <stringProp name="Header.name">X-AFS-ClientInfo</stringProp>
-                    <stringProp name="Header.value">os=windows; osVer=10.0.19042.1052; lcid=en-US; deviceType=9; deviceModel=Dell Inc./Latitude E7240;</stringProp>
-                  </elementProp>
-                  <elementProp name="Content-Type" elementType="Header">
-                    <stringProp name="Header.name">Content-Type</stringProp>
-                    <stringProp name="Header.value">multipart/mixed; boundary=&quot;Batch_1625571806&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="X-AFS-CV" elementType="Header">
-                    <stringProp name="Header.name">X-AFS-CV</stringProp>
-                    <stringProp name="Header.value">Xb+qdmjVACB0hIU1.0</stringProp>
-                  </elementProp>
-                  <elementProp name="OData-MaxVersion" elementType="Header">
-                    <stringProp name="Header.name">OData-MaxVersion</stringProp>
-                    <stringProp name="Header.value">4.0</stringProp>
-                  </elementProp>
-                  <elementProp name="X-Device-Ticket" elementType="Header">
-                    <stringProp name="Header.name">X-Device-Ticket</stringProp>
-                    <stringProp name="Header.value">t=EwC4Anl+BAAUvDBLmTCD21dGgKWS1TSPVrFoWQcAAZWjUeaIwXA9UWR3t/aKo+dGdI0YP83eeAvcnFTUUkIYhSwYXQTex42DpeS/ZanLgc5GXubYEkiDQfZWO3cWf5Z8dCW+GvyALBsfgIoENWjqgbVxefRWCMEfsZUdZlAzklZ56iTKL1tH/z2Z4bA9YLfKAKcPg5MsoiZcARwD693aHX/0b1EiJAOPfI+bVsyBeh7Kq9WKLvJbok1sx60tHLtC8jwyhweH4zx4Vn7BJ4uYCwNC3Me7w2wQmTxYLOIjAgYE4Zy5dMzejrQb1M3aIFpHEafY2kZekDiAqoZ/AsprHWogiEq4aiUkbZZEZ+law0Xfd59m5xVhi0RGo6h8uC0DZgAACA81ytWpVFIAiAEFr5jsg7phi3YPnAUwqfmMWaAofNKHpeqdY7XbIlDCd2JPw9c1tL1NLzQ7BTsEuEv0gyCFdzhBHGCtyGWKK7XhoE4OepgxLrJH//CincV6hwcm9atWYlNE3ALlAcQlcwVA4tW+xHrKHMMiZHj4WN/ZNpsU9XgCE1dYYNzmJVzU2jLaNH8iT/KQBmNhHJ7ndTSMRBEMhvbH/mEP7SOAue1KZpzpqDgpwL15Cy9dYVBJ2hRbJae96pran2N6sVcYtbyDYck8Wm5LHJBJQtWJC1J2778KVN5tALtZvWr8e9qoDkPXhYCyxVkpczFCMCn5kpet9TvAThrB5oaz3bX14oYU1h8oaJ1TAGqQnpMHnrgCvnwMllIWWqxgEmTxe4g7NLstZjEHZRzatl47dJhl42h/JtTty5nGDrdCwUkGfFAXRXVOaX6GOnrWDuKCsPShKgKT2Iqy03JNAeGyqihFZe5MJ/ALShThQEhcqyZZRWcpYKsccFDJOPvtehFzXr6cQOCJ1yjYS/sA47cB&amp;p=</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">SGPlatform 2.0</stringProp>
-                  </elementProp>
-                  <elementProp name="OData-Version" elementType="Header">
-                    <stringProp name="Header.name">OData-Version</stringProp>
-                    <stringProp name="Header.value">4.0</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/v3/feeds/me/views/c0d66d77-5bbd-d96e-0047-d1a3e299fbfc/activities-286" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="pageSize" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">pageSize</stringProp>
-                    <stringProp name="Argument.value">100</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">enterprise.activity.windows.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/v3/feeds/me/views/c0d66d77-5bbd-d96e-0047-d1a3e299fbfc/activities</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Date" elementType="Header">
-                    <stringProp name="Header.name">Date</stringProp>
-                    <stringProp name="Header.value">Tue, 06 Jul 2021 11:43:26 GMT</stringProp>
-                  </elementProp>
-                  <elementProp name="X-AFS-ClientInfo" elementType="Header">
-                    <stringProp name="Header.name">X-AFS-ClientInfo</stringProp>
-                    <stringProp name="Header.value">os=windows; osVer=10.0.19042.1052; lcid=en-US; deviceType=9; deviceModel=Dell Inc./Latitude E7240;</stringProp>
-                  </elementProp>
-                  <elementProp name="X-AFS-CV" elementType="Header">
-                    <stringProp name="Header.name">X-AFS-CV</stringProp>
-                    <stringProp name="Header.value">MaEo0tGUoLzmAq36.0</stringProp>
-                  </elementProp>
-                  <elementProp name="X-Device-Ticket" elementType="Header">
-                    <stringProp name="Header.name">X-Device-Ticket</stringProp>
-                    <stringProp name="Header.value">t=EwC4Anl+BAAUvDBLmTCD21dGgKWS1TSPVrFoWQcAAZWjUeaIwXA9UWR3t/aKo+dGdI0YP83eeAvcnFTUUkIYhSwYXQTex42DpeS/ZanLgc5GXubYEkiDQfZWO3cWf5Z8dCW+GvyALBsfgIoENWjqgbVxefRWCMEfsZUdZlAzklZ56iTKL1tH/z2Z4bA9YLfKAKcPg5MsoiZcARwD693aHX/0b1EiJAOPfI+bVsyBeh7Kq9WKLvJbok1sx60tHLtC8jwyhweH4zx4Vn7BJ4uYCwNC3Me7w2wQmTxYLOIjAgYE4Zy5dMzejrQb1M3aIFpHEafY2kZekDiAqoZ/AsprHWogiEq4aiUkbZZEZ+law0Xfd59m5xVhi0RGo6h8uC0DZgAACA81ytWpVFIAiAEFr5jsg7phi3YPnAUwqfmMWaAofNKHpeqdY7XbIlDCd2JPw9c1tL1NLzQ7BTsEuEv0gyCFdzhBHGCtyGWKK7XhoE4OepgxLrJH//CincV6hwcm9atWYlNE3ALlAcQlcwVA4tW+xHrKHMMiZHj4WN/ZNpsU9XgCE1dYYNzmJVzU2jLaNH8iT/KQBmNhHJ7ndTSMRBEMhvbH/mEP7SOAue1KZpzpqDgpwL15Cy9dYVBJ2hRbJae96pran2N6sVcYtbyDYck8Wm5LHJBJQtWJC1J2778KVN5tALtZvWr8e9qoDkPXhYCyxVkpczFCMCn5kpet9TvAThrB5oaz3bX14oYU1h8oaJ1TAGqQnpMHnrgCvnwMllIWWqxgEmTxe4g7NLstZjEHZRzatl47dJhl42h/JtTty5nGDrdCwUkGfFAXRXVOaX6GOnrWDuKCsPShKgKT2Iqy03JNAeGyqihFZe5MJ/ALShThQEhcqyZZRWcpYKsccFDJOPvtehFzXr6cQOCJ1yjYS/sA47cB&amp;p=</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">SGPlatform 2.0</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO2_Login/amb/connect-274" enabled="false">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
@@ -3639,7 +3524,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/tsc-288" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_01_tsc" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -3712,7 +3597,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/brand-theme-css.do-290" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_02_brand-theme-css.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="portal" elementType="HTTPArgument">
@@ -3720,18 +3605,21 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">portal</stringProp>
                     <stringProp name="Argument.value">tsc2_0</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="template" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">template</stringProp>
                     <stringProp name="Argument.value">brand_portal_theme_template</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="v" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">v</stringProp>
                     <stringProp name="Argument.value">57dfceab1bc9f450831e10a38b4bcb21</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -3800,7 +3688,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/tsc-289" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_03_tsc" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -3870,7 +3758,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/disconnect-291" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_04_amb/disconnect" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -3950,7 +3838,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/connect-287" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_05_amb/connect" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -4030,7 +3918,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/pages/states-292" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_06_api/tieoy/tsc/pages/states" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -4087,343 +3975,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/gtm.js-293" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="id" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">id</stringProp>
-                    <stringProp name="Argument.value">GTM-WG3S24H</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">www.googletagmanager.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/gtm.js</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">no-cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">script</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/analytics.js-297" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/analytics.js</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">no-cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">script</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb-296" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">tieto.service-now.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/amb</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Upgrade" elementType="Header">
-                    <stringProp name="Header.name">Upgrade</stringProp>
-                    <stringProp name="Header.value">websocket</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-WebSocket-Extensions" elementType="Header">
-                    <stringProp name="Header.name">Sec-WebSocket-Extensions</stringProp>
-                    <stringProp name="Header.value">permessage-deflate; client_max_window_bits</stringProp>
-                  </elementProp>
-                  <elementProp name="Origin" elementType="Header">
-                    <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">https://tieto.service-now.com</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-WebSocket-Version" elementType="Header">
-                    <stringProp name="Header.name">Sec-WebSocket-Version</stringProp>
-                    <stringProp name="Header.value">13</stringProp>
-                  </elementProp>
-                  <elementProp name="Pragma" elementType="Header">
-                    <stringProp name="Header.name">Pragma</stringProp>
-                    <stringProp name="Header.value">no-cache</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-WebSocket-Key" elementType="Header">
-                    <stringProp name="Header.name">Sec-WebSocket-Key</stringProp>
-                    <stringProp name="Header.value">TkPeWiSHmjJ7wMhEXOQ3dg==</stringProp>
-                  </elementProp>
-                  <elementProp name="Cache-Control" elementType="Header">
-                    <stringProp name="Header.name">Cache-Control</stringProp>
-                    <stringProp name="Header.value">no-cache</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/j/collect?v=1&amp;_v=j91&amp;a=127192897&amp;t=pageview&amp;_s=1&amp;dl=https%3A%2F%2Ftieto.service-now.com%2Ftsc&amp;ul=en-us&amp;de=UTF-8&amp;dt=Home%20-%20TSC&amp;sd=24-bit&amp;sr=1366x768&amp;vp=1366x625&amp;je=0&amp;_u=QACAAEABAAAAAC~&amp;jid=662128557&amp;gjid=1073363006&amp;cid=996066276.1623126198&amp;tid=UA-111676115-1&amp;_gid=2024906425.1625467649&amp;_r=1&amp;gtm=2wg6u0WG3S24H&amp;z=396293372-298" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/j/collect?v=1&amp;_v=j91&amp;a=127192897&amp;t=pageview&amp;_s=1&amp;dl=https%3A%2F%2Ftieto.service-now.com%2Ftsc&amp;ul=en-us&amp;de=UTF-8&amp;dt=Home%20-%20TSC&amp;sd=24-bit&amp;sr=1366x768&amp;vp=1366x625&amp;je=0&amp;_u=QACAAEABAAAAAC~&amp;jid=662128557&amp;gjid=1073363006&amp;cid=996066276.1623126198&amp;tid=UA-111676115-1&amp;_gid=2024906425.1625467649&amp;_r=1&amp;gtm=2wg6u0WG3S24H&amp;z=396293372</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Origin" elementType="Header">
-                    <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">https://tieto.service-now.com</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Content-Type" elementType="Header">
-                    <stringProp name="Header.name">Content-Type</stringProp>
-                    <stringProp name="Header.value">text/plain</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">empty</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/j/collect?t=dc&amp;aip=1&amp;_r=3&amp;v=1&amp;_v=j91&amp;tid=UA-111676115-1&amp;cid=996066276.1623126198&amp;jid=662128557&amp;gjid=1073363006&amp;_gid=2024906425.1625467649&amp;_u=QACAAEAAAAAAAC~&amp;z=885128280-300" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">stats.g.doubleclick.net</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/j/collect?t=dc&amp;aip=1&amp;_r=3&amp;v=1&amp;_v=j91&amp;tid=UA-111676115-1&amp;cid=996066276.1623126198&amp;jid=662128557&amp;gjid=1073363006&amp;_gid=2024906425.1625467649&amp;_u=QACAAEAAAAAAAC~&amp;z=885128280</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Origin" elementType="Header">
-                    <stringProp name="Header.name">Origin</stringProp>
-                    <stringProp name="Header.value">https://tieto.service-now.com</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="X-Client-Data" elementType="Header">
-                    <stringProp name="Header.name">X-Client-Data</stringProp>
-                    <stringProp name="Header.value">CI22yQEIorbJAQjEtskBCKmdygEIpKDLAQis8ssBCNzyywEI8PLLAQiI+MsBCLP4ywEInvnLAQ==</stringProp>
-                  </elementProp>
-                  <elementProp name="Content-Type" elementType="Header">
-                    <stringProp name="Header.name">Content-Type</stringProp>
-                    <stringProp name="Header.value">text/plain</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">empty</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/handshake-299" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_07_amb/handshake" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -4507,7 +4059,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/widget_availability-294" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_08_api/tieoy/tsc/widget_availability" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -4580,7 +4132,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/pages/states-295" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_09_api/tieoy/tsc/pages/states" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -4653,7 +4205,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/connect-301" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_10_amb/connect" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -4737,7 +4289,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/pages/states-302" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_11_api/tieoy/tsc/pages/states" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -4794,7 +4346,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/-303" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_12_amb/" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -4878,271 +4430,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/collect-311" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="v" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">v</stringProp>
-                    <stringProp name="Argument.value">1</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="_v" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">_v</stringProp>
-                    <stringProp name="Argument.value">j91</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="a" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">a</stringProp>
-                    <stringProp name="Argument.value">127192897</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="t" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">t</stringProp>
-                    <stringProp name="Argument.value">pageview</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="_s" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">_s</stringProp>
-                    <stringProp name="Argument.value">1</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="dl" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">dl</stringProp>
-                    <stringProp name="Argument.value">https%3A%2F%2Ftieto.service-now.com%2Ftsc</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="ul" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">ul</stringProp>
-                    <stringProp name="Argument.value">en-us</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="de" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">de</stringProp>
-                    <stringProp name="Argument.value">UTF-8</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="dt" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">dt</stringProp>
-                    <stringProp name="Argument.value">Home%20-%20TSC</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="sd" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">sd</stringProp>
-                    <stringProp name="Argument.value">24-bit</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="sr" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">sr</stringProp>
-                    <stringProp name="Argument.value">1366x768</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="vp" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">vp</stringProp>
-                    <stringProp name="Argument.value">1366x625</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="je" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">je</stringProp>
-                    <stringProp name="Argument.value">0</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="_u" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">_u</stringProp>
-                    <stringProp name="Argument.value">SACAAEABAAAAAC~</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="jid" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">jid</stringProp>
-                    <stringProp name="Argument.value"></stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="gjid" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">gjid</stringProp>
-                    <stringProp name="Argument.value"></stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="cid" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">cid</stringProp>
-                    <stringProp name="Argument.value">996066276.1623126198</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="tid" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">tid</stringProp>
-                    <stringProp name="Argument.value">UA-111676115-1</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="_gid" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">_gid</stringProp>
-                    <stringProp name="Argument.value">2024906425.1625467649</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="gtm" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">gtm</stringProp>
-                    <stringProp name="Argument.value">2wg6u0WG3S24H</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="cd1" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">cd1</stringProp>
-                    <stringProp name="Argument.value"></stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="z" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">z</stringProp>
-                    <stringProp name="Argument.value">317302683</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">www.google-analytics.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/collect</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">no-cors</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">image</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/include.js-307" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="_" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">_</stringProp>
-                    <stringProp name="Argument.value">1625571813237</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">topbar.intra.tieto.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/include.js</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">no-cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">script</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/now/ui/presence?sysparm_auto_request=true&amp;cd=1625571817111-305" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_13_api/now/ui/presence?sysparm_auto_request=true&amp;cd=1625571817111" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -5230,111 +4518,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/cbede638-a3d9-459f-8f4e-24ced73b4e5e/oauth2/authorize-312" enabled="false">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="response_type" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">response_type</stringProp>
-                    <stringProp name="Argument.value">code</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="client_id" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">client_id</stringProp>
-                    <stringProp name="Argument.value">8768d682-4fdd-4c98-8b54-e8e31f9adba0</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="scope" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">scope</stringProp>
-                    <stringProp name="Argument.value">openid</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="nonce" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">nonce</stringProp>
-                    <stringProp name="Argument.value">412a047c-10dc-4148-8d1a-697da3c772d2</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="redirect_uri" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">redirect_uri</stringProp>
-                    <stringProp name="Argument.value">https%3a%2f%2ftopbar.intra.tieto.com%2f</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="state" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">state</stringProp>
-                    <stringProp name="Argument.value">AppProxyState%3a%7b%22InvalidTokenRetry%22%3anull%2c%22IsMsofba%22%3afalse%2c%22OriginalRawUrl%22%3a%22https%3a%5c%2f%5c%2ftopbar.intra.tieto.com%5c%2finclude.js%3f_%3d1625571813237%22%2c%22RequestProfileId%22%3anull%2c%22SessionId%22%3a%22ad41ce14-0c13-45b8-a5be-730e4e5c6296%22%7d%23EndOfStateParam%23</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                  <elementProp name="client-request-id" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">client-request-id</stringProp>
-                    <stringProp name="Argument.value">ad41ce14-0c13-45b8-a5be-730e4e5c6296</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-              <stringProp name="HTTPSampler.domain">login.microsoftonline.com</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/cbede638-a3d9-459f-8f4e-24ced73b4e5e/oauth2/authorize</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Sec-Fetch-Mode" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
-                    <stringProp name="Header.value">no-cors</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Site" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
-                    <stringProp name="Header.value">cross-site</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Language" elementType="Header">
-                    <stringProp name="Header.name">Accept-Language</stringProp>
-                    <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept" elementType="Header">
-                    <stringProp name="Header.name">Accept</stringProp>
-                    <stringProp name="Header.value">*/*</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">&quot; Not;A Brand&quot;;v=&quot;99&quot;, &quot;Google Chrome&quot;;v=&quot;91&quot;, &quot;Chromium&quot;;v=&quot;91&quot;</stringProp>
-                  </elementProp>
-                  <elementProp name="sec-ch-ua-mobile" elementType="Header">
-                    <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
-                    <stringProp name="Header.value">?0</stringProp>
-                  </elementProp>
-                  <elementProp name="Accept-Encoding" elementType="Header">
-                    <stringProp name="Header.name">Accept-Encoding</stringProp>
-                    <stringProp name="Header.value">gzip, deflate, br</stringProp>
-                  </elementProp>
-                  <elementProp name="User-Agent" elementType="Header">
-                    <stringProp name="Header.name">User-Agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36</stringProp>
-                  </elementProp>
-                  <elementProp name="Sec-Fetch-Dest" elementType="Header">
-                    <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
-                    <stringProp name="Header.value">script</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-            </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/now/sp/announcement-306" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_14_api/now/sp/announcement" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5415,7 +4599,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/my_issues_hide-308" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_15_api/tieoy/tsc/my_issues_hide" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5488,7 +4672,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/me/data-309" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_16_api/tieoy/tsc/me/data" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5561,7 +4745,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/navigation/menu-310" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_17_api/tieoy/tsc/navigation/menu" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5634,7 +4818,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/shopping_cart-313" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_18_api/tieoy/tsc/shopping_cart" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5707,7 +4891,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/surveys/active-315" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_19_api/tieoy/tsc/surveys/active" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5780,7 +4964,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/session-314" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_20_api/tieoy/tsc/session" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5853,7 +5037,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/now/live/profiles/sys_user.413c063bddda7800831637d0ac2c8b5a-316" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_21_api/now/live/profiles/sys_user.413c063bddda7800831637d0ac2c8b5a" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5926,7 +5110,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/homepagetabs-317" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_22_api/tieoy/tsc/homepagetabs" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5999,7 +5183,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/approvals_exists-318" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_23_api/tieoy/tsc/approvals_exists" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -6072,7 +5256,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/-323" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_24_amb/" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -6156,7 +5340,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/catalog_list-320" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_25_api/tieoy/tsc/catalog_list" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="catalog" elementType="HTTPArgument">
@@ -6164,18 +5348,21 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">catalog</stringProp>
                     <stringProp name="Argument.value">e0d08b13c3330100c8b837659bba8fb4</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="favourites" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">favourites</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="limit" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">limit</stringProp>
                     <stringProp name="Argument.value">10</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -6248,7 +5435,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/brand-logo.do-321" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_26_brand-logo.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -6314,7 +5501,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/catalog_list-319" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_27_api/tieoy/tsc/catalog_list" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="catalog" elementType="HTTPArgument">
@@ -6322,18 +5509,21 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">catalog</stringProp>
                     <stringProp name="Argument.value">d0bec52adb60330062f27a0bbf961970</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="favourites" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">favourites</stringProp>
                     <stringProp name="Argument.value">true</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="limit" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">limit</stringProp>
                     <stringProp name="Argument.value">10</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -6406,7 +5596,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/service_desk-322" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_28_api/tieoy/tsc/service_desk" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -6479,7 +5669,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/my_issues-325" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_29_api/tieoy/tsc/my_issues" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="activePage" elementType="HTTPArgument">
@@ -6487,72 +5677,84 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">activePage</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="limit" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">limit</stringProp>
                     <stringProp name="Argument.value">10</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="openedFilterValue" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">openedFilterValue</stringProp>
                     <stringProp name="Argument.value">%7B%22displayValue%22:%22For+%2F+By+me%22,%22value%22:%22for_by_me%22%7D</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="orderByField" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">orderByField</stringProp>
                     <stringProp name="Argument.value">created</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="orderDirection" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">orderDirection</stringProp>
                     <stringProp name="Argument.value">desc</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">1</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">2</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">-100</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">4</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">-410</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">-420</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="stateFilterValues" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">stateFilterValues</stringProp>
                     <stringProp name="Argument.value">6</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -6625,7 +5827,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/amb/-330" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_30_amb/" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
@@ -6709,7 +5911,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/navigation/warnings-326" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_31_api/tieoy/tsc/navigation/warnings" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="requested_items" elementType="HTTPArgument">
@@ -6717,12 +5919,14 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">requested_items</stringProp>
                     <stringProp name="Argument.value">incidents</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="requested_items" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">requested_items</stringProp>
                     <stringProp name="Argument.value">orders</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -6795,7 +5999,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/me/lang-329" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_32_api/tieoy/tsc/me/lang" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -6868,7 +6072,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/me/info-327" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_33_api/tieoy/tsc/me/info" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -6941,7 +6145,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/api/tieoy/tsc/banners-331" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_34_api/tieoy/tsc/banners" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -7014,7 +6218,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC/tsc-service-worker.jsdbx-334" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO3_NavTSC_35_tsc-service-worker.jsdbx" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8287,7 +7491,7 @@ Content-Type: application/json&#xd;
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/logout.do-356" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_01_logout.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8369,7 +7573,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/logout_success.do-357" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_02_logout_success.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8443,7 +7647,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/auth_redirect.do-358" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_03_auth_redirect.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="sysparm_stack" elementType="HTTPArgument">
@@ -8451,12 +7655,14 @@ Content-Type: application/json&#xd;
                     <stringProp name="Argument.name">sysparm_stack</stringProp>
                     <stringProp name="Argument.value">no</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                   <elementProp name="sysparm_url" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sysparm_url</stringProp>
                     <stringProp name="Argument.value">external_logout_complete.do</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -8529,7 +7735,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/api/now/ui/date_time/legacy-359" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_04_api/now/ui/date_time/legacy" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8598,7 +7804,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/external_logout_complete.do-360" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_05_external_logout_complete.do" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8667,7 +7873,7 @@ Content-Type: application/json&#xd;
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout/api/now/ui/date_time/legacy-361" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TO5_Logout_06_api/now/ui/date_time/legacy" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
