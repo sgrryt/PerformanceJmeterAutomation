@@ -31,7 +31,7 @@
           <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T001_LaunchURL_MainTransaction" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T001_LaunchURL" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
@@ -431,7 +431,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T002_Login_MainTransaction" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T002_Login" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
@@ -3439,7 +3439,7 @@
             <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
           </AuthManager>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T003_NavTSC_MainTransaction" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T003_NavTSC" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
@@ -6284,7 +6284,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T004_ReportAnIssue_MainTransaction" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T004_ReportAnIssue" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
@@ -7486,7 +7486,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T005_Logout_MainTransaction" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="T005_Logout" enabled="true">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
