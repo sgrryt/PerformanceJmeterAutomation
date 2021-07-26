@@ -5488,7 +5488,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/j/collect?v=1&amp;_v=j91&amp;a=886549506&amp;t=pageview&amp;_s=1&amp;dl=https%3A%2F%2Ftieto.service-now.com%2Ftsc&amp;ul=en-us&amp;de=UTF-8&amp;dt=Home%20-%20TSC&amp;sd=24-bit&amp;sr=1536x864&amp;vp=1536x722&amp;je=0&amp;_u=YADAAEABAAAAAC~&amp;jid=41978292&amp;gjid=1512992728&amp;cid=1675275898.1626930905&amp;tid=UA-111676115-1&amp;_gid=1683670556.1627034261&amp;_r=1&amp;gtm=2wg7l1WG3S24H&amp;z=1063597489-83" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/j/collect?v=1&amp;_v=j91&amp;a=886549506&amp;t=pageview&amp;_s=1&amp;dl=https%3A%2F%2Ftieto.service-now.com%2Ftsc&amp;ul=en-us&amp;de=UTF-8&amp;dt=Home%20-%20TSC&amp;sd=24-bit&amp;sr=1536x864&amp;vp=1536x722&amp;je=0&amp;_u=YADAAEABAAAAAC~&amp;jid=41978292&amp;gjid=1512992728&amp;cid=1675275898.1626930905&amp;tid=UA-111676115-1&amp;_gid=1683670556.1627034261&amp;_r=1&amp;gtm=2wg7l1WG3S24H&amp;z=1063597489-83" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -5940,7 +5940,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/include.js-89" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/include.js-89" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="_" elementType="HTTPArgument">
