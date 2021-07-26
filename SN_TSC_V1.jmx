@@ -6595,7 +6595,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/topmenu.js-97" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/topmenu.js-97" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -7798,7 +7798,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/desktop-373d8de508fd571234c7e2dfe12808194b49d1b4e1fa8616b2e7598098d5e656.js-114" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/desktop-373d8de508fd571234c7e2dfe12808194b49d1b4e1fa8616b2e7598098d5e656.js-114" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -7863,7 +7863,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/themes/topmenu_white-6a1e16dfcd148313e0ad077e1a2775549a16440abd05d3266507080948634f95.css-112" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/themes/topmenu_white-6a1e16dfcd148313e0ad077e1a2775549a16440abd05d3266507080948634f95.css-112" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8081,7 +8081,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/libs-b0c2509e3516ce9a67100d540c754b6ea2a01047b697ede9f3c850f84c000f41.js-113" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/libs-b0c2509e3516ce9a67100d540c754b6ea2a01047b697ede9f3c850f84c000f41.js-113" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8146,7 +8146,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/event-118" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/event-118" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8505,7 +8505,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-120" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-120" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8574,7 +8574,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/icon_set/Lovicons-a94036b6505a6713795d3a63bbb7a34b3809d4b8c27252f5da33f35ed1f56447.woff-122" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/icon_set/Lovicons-a94036b6505a6713795d3a63bbb7a34b3809d4b8c27252f5da33f35ed1f56447.woff-122" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8648,7 +8648,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/event-123" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/event-123" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -8793,7 +8793,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/topmenu/globalstorage-121" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/topmenu/globalstorage-121" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -9004,7 +9004,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/globalstorage/server-bc08e12120de98ac7745205618dfa4c1ccfb742c5ce804df6766741a24e3fb23.js-132" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/assets/globalstorage/server-bc08e12120de98ac7745205618dfa4c1ccfb742c5ce804df6766741a24e3fb23.js-132" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -9153,7 +9153,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-133" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-133" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -9312,7 +9312,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-135" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TSC/api/session-135" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -10429,7 +10429,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Report_Issue/api/event-155" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Report_Issue/api/event-155" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -10498,7 +10498,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Report_Issue/api/event-153" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Report_Issue/api/event-153" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -12157,7 +12157,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Software Catalogue/api/event-177" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Software Catalogue/api/event-177" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -12318,7 +12318,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Software Catalogue/api/event-178" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Software Catalogue/api/event-178" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -13981,7 +13981,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other/api/event-198" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other/api/event-198" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -14054,7 +14054,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other/api/event-199" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other/api/event-199" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -14309,7 +14309,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other-Search-Gen Service Req/api/event-209" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other-Search-Gen Service Req/api/event-209" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -14382,7 +14382,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other-Search-Gen Service Req/api/event-210" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Order-Other-Search-Gen Service Req/api/event-210" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -16614,7 +16614,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Change/api/event-234" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Change/api/event-234" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -16687,7 +16687,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Change/api/event-235" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Change/api/event-235" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -17236,7 +17236,7 @@
             <boolProp name="TransactionController.parent">true</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Documents/api/event-248" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Documents/api/event-248" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
@@ -17309,7 +17309,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Documents/api/event-249" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Manage-Documents/api/event-249" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
